@@ -158,6 +158,10 @@ Error_Handler();
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+      HAL_GPIO_TogglePin(LD1_GPIO_Port, LD1_Pin);
+      HAL_Delay(200);
+      HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
+      HAL_Delay(200);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
