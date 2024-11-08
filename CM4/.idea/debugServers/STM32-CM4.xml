@@ -1,0 +1,14 @@
+<component name="DebugServers">
+  <generic-debug-target name="STM32-CM4" uniqueID="a1c7503c-6f3d-4f7e-81a5-67829549dc9b" selected="true">
+    <debugger version="1">
+      <debugger kind="GDB" isBundled="true" />
+      <env />
+    </debugger>
+    <gdbserver exe="C:\ST\STM32CubeCLT_1.16.0\STLink-gdb-server\bin\ST-LINK_gdbserver.exe" args="-p 32271 -cp &quot;C:\ST\STM32CubeCLT_1.16.0\STM32CubeProgrammer\bin&quot; --frequency 24000 --swd -e -t -m 3">
+      <env script="" />
+    </gdbserver>
+    <console port="4444" />
+    <target reset-before="false" />
+    <connection extended-remote="false" remote-string="tcp::32271" custom-script="define cm4_reset&#10;monitor reset hardware&#10;c&#10;end&#10;&#10;target extended-remote tcp::32271" />
+  </generic-debug-target>
+</component>
